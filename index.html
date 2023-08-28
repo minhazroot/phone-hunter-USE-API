@@ -54,7 +54,7 @@
         </div>
 
     </header>
-    <main>
+    <main class="container mx-auto">
         <section class="flex flex-col justify-center mt-5">
             <!-- add a loading-spinner -->
             <div id="loading-spinner" class="text-center mt-20 hidden">
@@ -65,10 +65,28 @@
                 <!-- show all button  -->
 
             </div>
-            <div id="show_all_Conty" class="hidden mt-5">
-                <button class="btn btn-accent">Show all</button>
-            </div>
+            <center>
+                <div id="show_all_Conty" class="hidden mt-5">
+
+                    <button onclick="ShowAll()" class="btn btn-accent ">Show all</button>
+                </div>
+            </center>
         </section>
+        <!-- Open the modal using ID.showModal() method -->
+
+        <dialog id="Show_Details_modal" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+
+                <div class="flex flex-col  items-center" id="Detels_container">
+
+                </div>
+
+                <div class="modal-action">
+
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
 
     </main>
     <footer>
